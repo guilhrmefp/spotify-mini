@@ -146,7 +146,6 @@ body {
   display: flex;
   justify-content: space-around;
   padding: 0.5rem;
-  -webkit-app-region: no-drag;
 }
 
 .control {
@@ -160,6 +159,7 @@ body {
   border: 0;
   cursor: pointer;
   background: none;
+  -webkit-app-region: no-drag;
 
   &:hover {
     svg,
