@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
+    <title>Spotify Mini</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="playlist">
+        <ol class="playlist__list">
+          <li class="playlist__list__item">
+            <span class="title">EVA</span>
+            <span class="artist">Fresno feat. Far From Alask</span>
+          </li>
+          <li class="playlist__list__item active">
+            <span class="title">Espelho</span>
+            <span class="artist">Black Days</span>
+          </li>
+          <li class="playlist__list__item">
+            <span class="title">Invisível</span>
+            <span class="artist">Cefa</span>
+          </li>
+          <li class="playlist__list__item">
+            <span class="title">Cresci</span>
+            <span class="artist">Rancore</span>
+          </li>
+          <li class="playlist__list__item">
+            <span class="title">Pra mais tarde fazermos a cabeça</span>
+            <span class="artist">Charlie Brown Jr.</span>
+          </li>
+        </ol>
+      </div>
+      <div class="player">
+        <button class="btn btn--playlist"></button>
+        <button class="btn btn--close"></button>
+        <progress class="progress" value="50" max="100"></progress>
+        <div class="controls">
+          <button class="control control__prev">
+            <svg viewBox="0 0 90.9 100">
+              <path d="M90.9 0v100L18.2 58v37.5H0v-91h18.2V42L90.9 0z" />
+            </svg>
+          </button>
+          <button class="control control__play">
+            <svg class="play" viewBox="0 0 86.5 100">
+              <path d="M0 100V0l86.5 50L0 100z" />
+            </svg>
+            <svg class="pause" viewBox="0 0 83.3 100">
+              <path d="M0 100V0h25v100H0zm58.3 0V0h25v100h-25z" />
+            </svg>
+          </button>
+          <button class="control control__next">
+            <svg viewBox="0 0 90.9 100">
+              <path d="M72.7 4.5h18.2v90.9H72.7V58L0 100V0l72.7 42V4.5z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
