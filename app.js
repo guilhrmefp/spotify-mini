@@ -8,18 +8,17 @@ const {
 
 let win;
 let tray;
-const playlistHeight = 192;
-// const playerHeight = 52;
 let playlistOpened = false;
+const playlistHeight = 192;
+const playerHeight = 52;
 
 function createWindow() {
   win = new BrowserWindow({
-    width: 192,
-    height: 52,
+    width: playlistHeight,
+    height: playerHeight,
     autoHideMenuBar: true,
-    type: 'toolbar',
     frame: false,
-    // resizable: false,
+    resizable: false,
     skipTaskbar: true,
     alwaysOnTop: true,
     webPreferences: {
@@ -29,7 +28,7 @@ function createWindow() {
 
   // win.loadFile('index.html');
   win.loadURL('http://localhost:8080');
-  win.webContents.openDevTools();
+  win.webContents.openDevTools({ mode: 'detach' });
 }
 
 app.whenReady().then(createWindow);
