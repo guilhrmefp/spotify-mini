@@ -7,6 +7,7 @@ module.exports = {
   },
   "rules": {
     "indent": ["error"],
+    "linebreak-style": "off",
     "import/no-extraneous-dependencies": ["error", {"devDependencies": true}]
   }
 };
