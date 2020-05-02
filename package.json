@@ -1,10 +1,10 @@
 {
-  "name": "spotify-mini",
+  "name": "mini-player",
   "sideEffects": [
     "*.css"
   ],
   "version": "1.0.0",
-  "description": "An always-on-top player for Spotify.",
+  "description": "An always-on-top player for Spotify™.",
   "main": "app.js",
   "scripts": {
     "start": "electron .",
